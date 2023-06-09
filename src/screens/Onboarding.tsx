@@ -1,6 +1,8 @@
 import { ImageBackground, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import CoffeeTaste from '../components/CoffeeTaste'
+import OnboardText from '../components/OnboardText'
+import Button from '../components/Button'
 
 
 const Onboarding = () => {
@@ -12,6 +14,8 @@ const Onboarding = () => {
                 resizeMode='cover'
             >
                 <CoffeeTaste />
+                <OnboardText />
+                <Button title="Get Started" onPress={() => { }} />
             </ImageBackground>
         </View>
     )
@@ -27,6 +31,7 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         height: '100%',
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
     },
 })
