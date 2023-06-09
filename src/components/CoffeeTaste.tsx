@@ -6,7 +6,7 @@ const CoffeeTaste = () => {
     return (
         <View style = {{ alignItems: 'center' , }}>
             <CoffeeTasteIcon style={{ width: 52, height: 52 }} />
-            <Text style={{ fontFamily: 'Amaranth-Bold', fontSize: 14, lineHeight: 17, letterSpacing: 4 }}>COFFEE TASTE!</Text>
+            <Text style={{ fontFamily: 'Amaranth-Bold', fontSize: 14, lineHeight: 17, letterSpacing: 4 , color:'white',}}>COFFEE TASTE!</Text>
         </View>
     )
 }

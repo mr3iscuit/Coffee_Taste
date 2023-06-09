@@ -5,28 +5,27 @@ import OnboardText from '../components/OnboardText'
 import Button from '../components/Button'
 
 
-const Onboarding = () => {
+const Onboarding = ({ navigation }: any) => {
+
+    const nextScreen = () => {
+        navigation.navigate('SignIn');
+    }
+
     return (
-        <View style={styles.container}>
-            <StatusBar translucent backgroundColor='transparent' />
-            <ImageBackground style={styles.backgroundImage}
-                source={require('../assets/coffe_background.png')}
-                resizeMode='cover'
-            >
-                <CoffeeTaste />
-                <OnboardText />
-                <Button title="Get Started" onPress={() => { }} />
-            </ImageBackground>
-        </View>
+        <ImageBackground style={styles.backgroundImage}
+            source={require('../assets/coffe_background.jpg')}
+            resizeMode='cover'>
+            <StatusBar translucent backgroundColor='transparent' barStyle='dark-content' />
+            <CoffeeTaste />
+            <OnboardText />
+            <Button title="Get Started" onPress={nextScreen} />
+        </ImageBackground>
     )
 }
 
 export default Onboarding
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1
-    },
     backgroundImage: {
         flex: 1,
         width: '100%',

@@ -22,13 +22,13 @@ const styles = StyleSheet.create({
     width:310, 
     marginTop:63,
     marginBottom:51,
-    //backgroundColor:'red',
     },
     t1: {
         fontFamily: 'Quicksand-Medium',
         fontWeight: '500',
         fontSize: 32,
-        lineHeight: 38
+        lineHeight: 38,
+        color:'white',
     },
     t2: {
         fontFamily: 'Quicksand-Bold',
@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
         fontSize: 40,
         lineHeight: 49,
         letterSpacing: 1,
+        color:'white',
     },
     t3: {
         fontFamily: 'Quicksand-Medium',

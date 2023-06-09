@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
         lineHeight: 38,
         flex: 1,
         textAlign: 'center',
+        color : 'white'
     },
     arrowContainer: {
         width: 19,
