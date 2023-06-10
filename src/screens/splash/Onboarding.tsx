@@ -1,8 +1,9 @@
 import { ImageBackground, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import CoffeeTaste from '../components/CoffeeTaste'
-import OnboardText from '../components/OnboardText'
-import Button from '../components/Button'
+import CoffeeTaste from '../../components/CoffeeTaste'
+import OnboardText from '../../components/OnboardText'
+import Button from '../../components/Button'
+
 
 
 const Onboarding = ({ navigation }: any) => {
@@ -13,7 +14,7 @@ const Onboarding = ({ navigation }: any) => {
 
     return (
         <ImageBackground style={styles.backgroundImage}
-            source={require('../assets/coffe_background.jpg')}
+            source={require('../../assets/coffe_background.jpg')}
             resizeMode='cover'
             >
             <StatusBar translucent backgroundColor='transparent' barStyle='dark-content' />
