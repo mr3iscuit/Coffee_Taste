@@ -3,7 +3,7 @@ import { TextInput, StyleSheet, View, Text, TouchableOpacity, Image } from 'reac
 import Visible from '../assets/Svgs/Visible';
 import PasswordFieldIcon from '../assets/Svgs/PasswordFieldIcon';
 
-const PasswordField = () => {
+const PasswordField = ({ label }: any) => {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [password, setPassword] = useState('');
 
@@ -14,7 +14,7 @@ const PasswordField = () => {
     return (
         <View style={styles.container}>
             <View style={styles.labelContainer}>
-                <Text style={styles.labelText}>PASSWORD</Text>
+                <Text style={styles.labelText}>{label}</Text>
                 <Text style={styles.requiredLabel}>*</Text>
             </View>
             <View style={styles.view}>

@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         gap:7,
         width:310, 
-        marginTop:63,
-        marginBottom:51,
+        marginTop:43,
+        marginBottom:31,
     },
     t1: {
         fontFamily: 'Quicksand-Bold',

@@ -7,7 +7,12 @@ import PasswordField from '../components/PasswordField'
 import TextButton from '../components/TextButton'
 import Button from '../components/Button'
 
-const SignIn = () => {
+const SignIn = ({ navigation }: any) => {
+
+    const signUpScreen = () => {
+        navigation.navigate('SignUp');
+    }
+
     return (
         <ImageBackground style={styles.backgroundImage}
             source={require('../assets/coffe_background.jpg')}
@@ -20,14 +25,16 @@ const SignIn = () => {
             </View>
             <View style={styles.view2}>
                 <TextField />
-                <PasswordField />
+                <PasswordField label={'PASSWORD'} />
+            </View>
+            <View style={{ marginTop: 14 }}>
+                <TextButton title="Forgot password?" onPress={() => { }} />
             </View>
             <View style={styles.view3}>
-                <TextButton title="Forgot password?" onPress={() => { }} />
-                <Button title="Sign In" onPress={{}} />
+                <Button title="Sign In" onPress={{}} margin={22} />
                 <View style={styles.signUp}>
                     <Text style={styles.text}>Don’t have an account?  </Text>
-                    <TextButton title="Sign Up" onPress={() => {}} />
+                    <TextButton title="Sign Up" onPress={signUpScreen} />
                 </View>
             </View>
         </ImageBackground>
@@ -42,12 +49,13 @@ const styles = StyleSheet.create({
     },
     view2: {
         marginTop: 72,
-        marginbottom: 105,
         marginHorizontal: 116,
         gap: 23,
     },
     view3: {
-        
+        justifyContent: 'flex-end',
+        flex: 1,
+        marginBottom: 43
         //backgroundColor : 'red'
     },
     signUp: {
@@ -61,7 +69,7 @@ const styles = StyleSheet.create({
         height: '100%',
         alignItems: 'center',
     },
-    text:{
+    text: {
         fontFamily: 'Quicksand-Medium',
         fontWeight: '400',
         fontSize: 16,
