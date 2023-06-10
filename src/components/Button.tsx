@@ -2,14 +2,15 @@ import React from 'react';
 import { TouchableOpacity, Text, StyleSheet, View } from 'react-native';
 import ButtonArrow from '../assets/Svgs/ButtonArrow';
 
-const Button = ({ title, onPress }: any) => {
-    return (
-        <TouchableOpacity style={styles.button} onPress={onPress}>
+const Button = ({ title, onPress , margin }: any) => {
+    return (<View>
+        <TouchableOpacity style={[styles.button,margin && {margin}]} onPress={onPress}>
             <Text style={styles.buttonText}>{title}</Text>
             <View style={styles.arrowContainer}>
                 <ButtonArrow />
             </View>
         </TouchableOpacity>
+    </View>
     );
 };
 
@@ -22,7 +23,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'row',
-        marginBottom: 56
     },
     buttonText: {
         fontFamily: 'Quicksand-SemiBold',
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         lineHeight: 38,
         flex: 1,
         textAlign: 'center',
-        color : 'white'
+        color: 'white'
     },
     arrowContainer: {
         width: 19,

@@ -14,11 +14,13 @@ const Onboarding = ({ navigation }: any) => {
     return (
         <ImageBackground style={styles.backgroundImage}
             source={require('../assets/coffe_background.jpg')}
-            resizeMode='cover'>
+            resizeMode='cover'
+            >
             <StatusBar translucent backgroundColor='transparent' barStyle='dark-content' />
+            <View style={styles.overlay} />
             <CoffeeTaste />
             <OnboardText />
-            <Button title="Get Started" onPress={nextScreen} />
+            <Button title="Get Started" onPress={nextScreen} margin={56} />
         </ImageBackground>
     )
 }
@@ -32,5 +34,9 @@ const styles = StyleSheet.create({
         height: '100%',
         justifyContent: 'flex-end',
         alignItems: 'center',
+    },
+    overlay: {
+        ...StyleSheet.absoluteFillObject,
+        backgroundColor: 'rgba(0, 0, 0, 0.7)',
     },
 })
