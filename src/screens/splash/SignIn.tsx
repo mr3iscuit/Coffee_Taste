@@ -9,6 +9,10 @@ import Button from '../../components/Button'
 
 const SignIn = ({ navigation }: any) => {
 
+    const startApp = () => {
+        navigation.navigate('TabMain');
+    }
+
     const signUpScreen = () => {
         navigation.navigate('SignUp');
     }
@@ -31,7 +35,7 @@ const SignIn = ({ navigation }: any) => {
                 <TextButton title="Forgot password?" onPress={() => { }} />
             </View>
             <View style={styles.view3}>
-                <Button title="Sign In" onPress={{}} margin={22} />
+                <Button title="Sign In" onPress={startApp} margin={22} />
                 <View style={styles.signUp}>
                     <Text style={styles.text}>Don’t have an account?  </Text>
                     <TextButton title="Sign Up" onPress={signUpScreen} />
