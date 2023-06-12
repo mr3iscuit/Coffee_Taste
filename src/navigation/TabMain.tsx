@@ -18,11 +18,15 @@ const TabMain = () => {
             <Tab.Navigator
                 screenOptions={({ route }) => ({
                     tabBarStyle: {
-                        backgroundColor: 'rgba(85, 67, 60, 0.3)',
+                        backgroundColor: 'rgba(85, 67, 60, 0.4)',
                         borderTopWidth: 0,
                         elevation: 0, // For Android
                         shadowOpacity: 0, // For iOS
                         height: '8%',
+                        position: 'absolute',
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
                     },
                     tabBarIcon: ({ color, focused }) => {
                         let iconComponent;
