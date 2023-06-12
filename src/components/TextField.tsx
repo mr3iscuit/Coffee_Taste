@@ -1,16 +1,17 @@
 import React from 'react';
 import { TextInput, StyleSheet, View, Text } from 'react-native';
 import TextFieldTel from '../assets/Svgs/TextFieldTel';
+import ProfileIcon from '../assets/Svgs/ProfileIcon';
 
 const TextField = () => {
     return (
         <View style={styles.container}>
             <View style={styles.labelContainer}>
-                <Text style={styles.labelText}>PHONE NUMBER</Text>
+                <Text style={styles.labelText}>USER NAME</Text>
                 <Text style={styles.requiredLabel}>*</Text>
             </View>
             <View style={styles.view}>
-                <TextFieldTel style={styles.svg} />
+                <ProfileIcon style={styles.svg} />
                 <TextInput
                     style={styles.textField}
                     placeholderTextColor="#ffffff"
@@ -27,9 +28,11 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     svg: {
-        width: 31,
-        height: 30,
-        marginLeft:14,
+        width: 17,
+        height: 18,
+        marginLeft:18,
+        color: 'white',
+       // backgroundColor: 'red'
     },
     container: {
         justifyContent: 'center',
