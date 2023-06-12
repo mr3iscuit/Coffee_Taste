@@ -1,17 +1,20 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-import LoginStack from './src/navigation/stacks/LoginStack'
-import TabMain from './src/navigation/TabMain'
 import StartStack from './src/navigation/stacks/start/StartStack'
-
+import {Provider} from 'react-redux';
+import { store } from './src/redux'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 const App = () => {
+
+ //AsyncStorage.clear();
+
   return (
     <NavigationContainer>
-
-      <StartStack />
-
+      <Provider store={store}>
+        <StartStack />
+      </Provider>
     </NavigationContainer>
   )
 }
