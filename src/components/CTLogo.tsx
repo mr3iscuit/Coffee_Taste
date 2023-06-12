@@ -4,7 +4,7 @@ import CoffeeTasteIcon from '../assets/Svgs/CoffeeTasteIcon'
 
 const CTLogo = () => {
     return (
-        <View style={{ alignItems: 'center', flexDirection: 'row' }}>
+        <View style={{ alignItems: 'center', flexDirection: 'row', marginTop: 30}}>
             <CoffeeTasteIcon style={{ width: 50, height: 50, marginRight: 13 }} />
             <View>
                 <Text style={styles.text}>COFFEE</Text>

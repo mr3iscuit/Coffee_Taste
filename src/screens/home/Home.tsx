@@ -7,6 +7,8 @@ import { getAllcoffee } from '../../redux/coffee/CoffeeSlice';
 import CTLogo from '../../components/CTLogo';
 import HomeBar from '../../components/HomeBar';
 import HiText from '../../components/HiText';
+import SearchBar from '../../components/SearchBar';
+
 
 const Home = () => {
 
@@ -34,12 +36,12 @@ const Home = () => {
             <StatusBar translucent backgroundColor='transparent' barStyle='dark-content' />
             <View style={styles.overlay} />
 
-            <View style={{ alignItems: 'center' }}>
+            <View style={{ alignItems: 'center' , gap : 24 }}>
                 <CTLogo />
                 <HomeBar />
             </View>
             <HiText />
-
+            <SearchBar/>
         </ImageBackground>
     );
 };
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         height: '100%',
-        alignItems: 'center',
+        //alignItems: 'center',
     },
     overlay: {
         ...StyleSheet.absoluteFillObject,

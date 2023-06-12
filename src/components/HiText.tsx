@@ -14,13 +14,13 @@ export default HiText;
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'transparent',
-        alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 20,
+        marginVertical: 18,
+        marginLeft: 30,
     },
     text: {
         color: 'white',
-        fontSize: 24,
+        fontSize: 30,
         fontWeight: 'bold',
     },
 });
