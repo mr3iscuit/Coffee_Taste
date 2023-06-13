@@ -10,5 +10,3 @@ const CoffeeDetail = () => {
 }
 
 export default CoffeeDetail
-
-const styles = StyleSheet.create({})

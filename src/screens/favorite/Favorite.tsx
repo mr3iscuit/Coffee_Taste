@@ -1,14 +1,46 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { ImageBackground, StatusBar, StyleSheet, Text, View } from 'react-native';
 
 const Favorite = () => {
     return (
-        <View>
-            <Text>Favorite</Text>
-        </View>
-    )
-}
+        <ImageBackground
+            style={styles.backgroundImage}
+            source={require('../../assets/coffe_background.jpg')}
+            resizeMode='cover'
+        >
+            <StatusBar translucent backgroundColor='transparent' barStyle='dark-content' />
+            <View style={styles.overlay} />
+            <View style={styles.container}>
+                <Text style={styles.emptyBasketText}>Your favorites are empty</Text>
+            </View>
+        </ImageBackground>
+    );
+};
 
-export default Favorite
+export default Favorite;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    backgroundImage: {
+        flex: 1,
+        width: '100%',
+        height: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: 9,
+    },
+    overlay: {
+        ...StyleSheet.absoluteFillObject,
+        backgroundColor: 'rgba(5, 0, 0, 0.7)',
+    },
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    emptyBasketText: {
+        fontFamily: 'Quicksand-Bold',
+        fontWeight: '500',
+        fontSize: 30,
+        color:'white',
+    },
+});
