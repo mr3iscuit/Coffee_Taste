@@ -43,7 +43,7 @@ const SignUp = () => {
             setError('Passwords do not match');
         } else {
             axios
-                .post('http://192.168.1.104:8080/api/register', {
+                .post('http://169.254.159.183:8080/api/register', {
                     username: data.username,
                     password: data.password,
                 })
