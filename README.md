@@ -31,11 +31,11 @@ To run the project in your local environment, follow these steps:
 
 #### 1. Clone the repository: 
 ```
-git clone https://github.com/user/project.git
+git clone https://github.com/amilgasimov/Coffee_Taste.git
 ```
 #### 2. Go to the project directory:
 ```
-cd project
+cd Coffee_Taste 
 ```
 #### 3. Install the dependencies: 
 ```
