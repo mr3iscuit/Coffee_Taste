@@ -29,10 +29,22 @@ To run this project, you need the following requirements:
 
 To run the project in your local environment, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/user/project.git`
-2. Go to the project directory: `cd project`
-3. Install the dependencies: `npm install`
-4. Start the application: `npm start`
+#### 1. Clone the repository: 
+```
+git clone https://github.com/user/project.git
+```
+#### 2. Go to the project directory:
+```
+cd project
+```
+#### 3. Install the dependencies: 
+```
+npm install
+```
+#### 4. Start the application: 
+```
+npm start
+```
 
 ## Screenshots
 
