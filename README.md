@@ -65,7 +65,16 @@ Feel free to reach out to me via email: [![Email](https://img.shields.io/badge/E
 ## Contribution
 
 1. Fork this project.
-2. Create a new feature branch: `git checkout -b new-feature`
-3. Make your changes and commit them: `git commit -am 'New feature: Description'`
-4. Push your branch: `git push origin new-feature`
+2. Create a new feature branch: 
+```bash
+git checkout -b new-feature
+```
+3. Make your changes and commit them: 
+```bash
+git commit -am 'New feature: Description'
+```
+4. Push your branch: 
+```bash
+git push origin new-feature
+```
 5. Open a pull request.
