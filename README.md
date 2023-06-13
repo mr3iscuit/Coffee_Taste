@@ -8,13 +8,13 @@ This project is developed using React Native, Node.js, MongoDB, and Redux Toolki
 [![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)](https://redux-toolkit.js.org)
 [![JSON Web Token](https://img.shields.io/badge/JSON_Web_Token-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io)
 
-## About Me
+## Table Of Contents
 
-I am a passionate developer with experience in building mobile applications. I have expertise in React Native, Flutter. I love creating innovative solutions and delivering high-quality software.
-
-Connect with me on LinkedIn: [![LinkedIn](https://img.shields.io/badge/LinkedIn-Amil_Qasımov-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amil-qas%C4%B1mov-18a3b4243/)
-
-Feel free to reach out to me via email: [![Email](https://img.shields.io/badge/Email-amillgasimov%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amillgasimov@gmail.com)
+* [About Me](#about-me)
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Screenshots](#screenshots)
+* [Contribution](#contribution)
 
 ## Requirements
 
@@ -38,8 +38,17 @@ To run the project in your local environment, follow these steps:
 
 Here are some screenshots from our Coffee Taste app:
 
-![Screenshot 1](https://github.com/amilgasimov/Coffee_Taste/assets/93605485/386adf13-253f-47af-8632-6f4f10cbdb7c)
-![Screenshot 2](https://github.com/amilgasimov/Coffee_Taste/assets/93605485/6bf4248d-1bba-462b-995e-a41c45b5e740)
+| Onboarding Screen | Sign Up Screen | Home Screen | Profile Screen |
+|:-----------------:|:-----------:|:--------------:|:--------------:|
+|<img src="https://github.com/amilgasimov/Coffee_Taste/assets/93605485/386adf13-253f-47af-8632-6f4f10cbdb7c" width="200" alt="Onboarding Screen">|<img src="https://github.com/amilgasimov/Coffee_Taste/assets/93605485/6bf4248d-1bba-462b-995e-a41c45b5e740" width="200" alt="Home Screen">|<img src="https://github.com/amilgasimov/Coffee_Taste/assets/93605485/b2a09939-ddef-4fd2-a370-e5ab21dffdad" width="200" alt="Sign Up Screen">|<img src="https://github.com/amilgasimov/Coffee_Taste/assets/93605485/f703d6d6-55e6-4547-b5b4-7e1fcb3dbda1" width="200" alt="Profile Screen">|
+
+## About Me
+
+I am a passionate developer with experience in building mobile applications. I have expertise in React Native, Flutter. I love creating innovative solutions and delivering high-quality software.
+
+Connect with me on LinkedIn: [![LinkedIn](https://img.shields.io/badge/LinkedIn-Amil_Qasımov-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amil-qas%C4%B1mov-18a3b4243/)
+
+Feel free to reach out to me via email: [![Email](https://img.shields.io/badge/Email-amillgasimov%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amillgasimov@gmail.com)
 
 ## Contribution
 
